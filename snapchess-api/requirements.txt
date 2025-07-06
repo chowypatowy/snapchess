@@ -1,0 +1,12 @@
+Flask
+tensorflow>=2.0
+numpy
+Pillow
+werkzeug
+selenium
+matplotlib
+scipy
+opencv-python
+rembg
+keras
+
