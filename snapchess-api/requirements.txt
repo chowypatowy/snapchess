@@ -9,4 +9,4 @@ scipy
 opencv-python
 rembg
 keras
-
+gunicorn
