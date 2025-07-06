@@ -1,6 +1,5 @@
 from flask import Flask, request, jsonify
 import os
-import board_recognition as br
 from PIL import Image
 from werkzeug.utils import secure_filename
 import werkzeug
@@ -10,6 +9,7 @@ app = Flask(__name__)
 @app.route('/upload', methods=["POST"])
 def upload():
     if(request.method == "POST"):
+        import board_recognition as br
         imagefile = request.files['image']
         filename = werkzeug.utils.secure_filename(imagefile.filename)
         filepath = os.path.join("./uploadedimages/", filename)
