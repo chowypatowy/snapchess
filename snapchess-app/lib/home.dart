@@ -63,7 +63,7 @@ class _HomeState extends State<Home> {
     final pickedImage = await ImagePicker().pickImage(source: ImageSource.gallery);
     setState(() {loading = true;}); 
     selectedImage = File(pickedImage!.path);
-    final request = http.MultipartRequest("POST", Uri.parse('https://cc12-139-226-186-251.ngrok-free.app/upload'));
+    final request = http.MultipartRequest("POST", Uri.parse('https://snapchess-api.onrender.com';
 
     final headers = {"Content-type": "multipart/form-data"};
 
